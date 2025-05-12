@@ -20,6 +20,9 @@
       * {
         /* border: 1px solid #554d4d; */
       }
+      body {
+        height: 3000px;
+      }
     </style>
     <title>Belajar Tailwindcss</title>
   </head>
@@ -31,7 +34,7 @@
       TailwindCSS
     </h1>
 
-    <section class="mb-5">
+    <section class="mb-[10rem]">
       <h2 class="text-center font-semibold text-3xl mb-8">Spacing</h2>
       <p
         class="mb-8 text-center bg-gradient-to-br from-red-600 to-amber-400 max-w-2xl mx-auto"
@@ -44,7 +47,7 @@
         rerum omnis sequi natus.
       </p>
       <p
-        class="mb-8 text-center bg-amber-400 max-w-2xl mx-auto bg-gradient-to-br from-blue-600 to-green-300"
+        class="text-center bg-amber-400 max-w-2xl mx-auto bg-gradient-to-br from-blue-600 to-green-300"
       >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
         voluptatum alias cum doloremque fugit cumque tempore quas eligendi dolor
@@ -54,8 +57,14 @@
       </p>
     </section>
 
-    <section class="space-y-3 font-inter mx-1">
-      <h2 class="text-4xl font-bold">Belajar Typhography di Tailwindcss</h2>
+    <section class="space-y-3 font-inter mx-auto max-w-[40rem]">
+      <h2 class="text-4xl font-bold max-w-[20rem]">
+        Belajar Typhography di
+        <span
+          class="bg-gradient-to-r from-blue-800 to-cyan-300 bg-clip-text text-transparent"
+          >Tailwindcss</span
+        >
+      </h2>
       <p class="font-light text-1xl">
         Author : <a href="#" class="underline">Ronaldpratama</a>, 10 Mei 2025
       </p>
@@ -78,6 +87,153 @@
         necessitatibus esse illum amet sequi nostrum autem sint laudantium
         provident. Dicta?
       </p>
+    </section>
+
+    <section>
+      <h1 class="text-4xl mx-auto my-10 w-max">Background Styling</h1>
+      <div
+        class="w-[50vw] h-[45vh] mx-auto border-4 overflow-scroll bg-[url(https://images.unsplash.com/photo-1564284369929-026ba231f89b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover"
+      >
+        <p class="text-white">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
+          eius exercitationem repellendus, maxime nam impedit veritatis
+          perferendis minus dolore facilis sunt praesentium placeat, dolorum,
+          dolor doloremque ab ut cum blanditiis dolorem. Earum dicta, deleniti
+          mollitia ducimus vitae cum, quis repellendus fugiat, eaque asperiores
+          rerum. Tempore, quas maxime obcaecati sit consequatur nobis saepe
+          adipisci facilis beatae ipsum aliquid recusandae veritatis eius! Quam
+          sunt natus iure laudantium dicta? Id aut vero illum alias provident
+          optio consectetur sint nisi nobis ipsa nemo quia necessitatibus,
+          reprehenderit itaque perferendis blanditiis commodi harum aperiam,
+          ullam atque doloribus ex et. Commodi eaque impedit a et atque corrupti
+          perferendis omnis? Autem velit tenetur esse dignissimos sit laboriosam
+          quibusdam nostrum impedit expedita dolor dolorum veniam repellat
+          voluptates, ullam quos minima labore itaque optio quas? Dolores
+          adipisci nobis sed quasi, hic reiciendis incidunt voluptatum
+          distinctio? Beatae a perferendis aperiam sequi quidem voluptate
+          praesentium nesciunt vitae, mollitia numquam dolores ratione fuga iste
+          atque, aliquam, ipsa voluptas molestias! Unde, provident quisquam
+          deserunt accusamus qui enim sunt minus laborum, quam veritatis hic
+          dolorem! Iusto qui, atque exercitationem cumque voluptatem dignissimos
+          provident quibusdam rem molestias enim ducimus, cum porro aliquam
+          distinctio ratione laudantium nobis, repudiandae debitis quia
+          recusandae ipsum ab maiores. Voluptatibus sed vel iusto consequuntur
+          consequatur fuga placeat perspiciatis? Recusandae id aperiam molestiae
+          dolorem est, repellat quas perferendis qui porro labore laudantium non
+          odio nihil in quasi amet voluptates voluptatibus! Ipsam velit
+          necessitatibus suscipit quasi voluptatibus expedita, veniam, optio
+          enim distinctio corporis minus similique ex vel nemo obcaecati
+          recusandae totam earum sunt corrupti doloremque aperiam voluptate! Non
+          nobis ut harum delectus aliquid dicta quis obcaecati aliquam quibusdam
+          iusto, maiores dolor deserunt! Accusamus voluptatibus officia quam!
+          Pariatur cumque quasi ut atque eveniet possimus nam ipsam, voluptates
+          perferendis ex. Quaerat natus error laudantium sed architecto. Dolorem
+          vel explicabo praesentium nihil unde quod voluptatem cum nemo.
+        </p>
+      </div>
+    </section>
+
+    <section class="mx-auto w-max my-10">
+      <button class="bg-transparent ...">Button A</button>
+      <button class="bg-cyan-500 ...">Button B</button>
+      <button class="bg-pink-500 ...">Button C</button>
+
+      <div class="w-30 h-20 bg-linear-30 from-blue-800 to-pink-500"></div>
+    </section>
+
+    <section>
+      <div
+        class="border-1 border-slate-300 shadow p-3 rounded w-lg block mx-auto font-inter"
+      >
+        <p class="font-inter font-bold mx-auto my-5 w-max text-3xl">
+          Form Pendaftaran Lomba
+          <span
+            class="font-mono text-4xl block bg-gradient-to-r from-green-500 to-blue-600 to-90% bg-clip-text text-transparent"
+            >Hackathon 2024</span
+          >
+        </p>
+        <div class="justify-center space-y-3 flex flex-wrap">
+          <label for="Nama Universitas" class="">
+            <span
+              class="block mb-1 after:m-1 after:text-red-600 after:content-['*']"
+              >Nama Universitas</span
+            >
+            <input
+              class="border rounded border-slate-400 block w-md px-2 py-1 focus:outline-none invalid:border-red-600 invalid:border-1 invalid:text-red-600"
+              type="text"
+              id="Nama Universitas"
+              placeholder="Masukkan nama universitas anda..."
+            />
+          </label>
+          <label for="Nama" class="">
+            <span
+              class="block mb-1 after:m-1 after:text-red-600 after:content-['*']"
+              >Nama</span
+            >
+            <input
+              class="border rounded border-slate-400 block w-md px-2 py-1 focus:outline-none invalid:border-red-600 invalid:border-1 invalid:text-red-600"
+              type="text"
+              id="Nama"
+              placeholder="Masukkan nama anda..."
+            />
+          </label>
+          <label for="Fakultas" class="">
+            <span
+              class="block mb-1 after:m-1 after:text-red-600 after:content-['*']"
+              >Fakultas</span
+            >
+            <input
+              class="border rounded border-slate-400 block w-md px-2 py-1 focus:outline-none invalid:border-red-600 invalid:border-1 invalid:text-red-600"
+              type="text"
+              id="Fakultas"
+              placeholder="Masukkan fakultas anda..."
+            />
+          </label>
+
+          <label for="NIM" class="">
+            <span
+              class="block mb-1 after:m-1 after:text-red-600 after:content-['*']"
+              >NIM</span
+            >
+            <input
+              class="border rounded border-slate-400 block w-md px-2 py-1 focus:outline-none invalid:border-red-600 invalid:border-1 invalid:text-red-600"
+              type="text"
+              id="NIM"
+              placeholder="Masukkan NIM anda..."
+            />
+          </label>
+          <label for="Email" class="">
+            <span
+              class="block mb-1 after:m-1 after:text-red-600 after:content-['*']"
+              >Email</span
+            >
+            <input
+              class="border rounded border-slate-400 block w-md px-2 py-1 focus:outline-none invalid:border-red-600 invalid:border-1 invalid:text-red-600"
+              type="email"
+              id="Email"
+              placeholder="Masukkan Email anda..."
+            />
+          </label>
+          <label for="Password" class="">
+            <span
+              class="block mb-1 after:m-1 after:text-red-600 after:content-['*']"
+              >Password</span
+            >
+            <input
+              class="border rounded border-slate-400 block w-md px-2 py-1 focus:outline-none invalid:border-red-600 invalid:border-1 invalid:text-red-600"
+              type="password"
+              id="Password"
+              placeholder="Masukkan Password anda..."
+            />
+          </label>
+          <button
+            class="mt-3 mb-3 ml-auto mr-[1rem] px-4 py-2 text-[1rem] rounded-lg bg-slate-800 text-white active:bg-slate-300 active:text-black"
+            type="submit"
+          >
+            Simpan
+          </button>
+        </div>
+      </div>
     </section>
   </body>
 </html>
