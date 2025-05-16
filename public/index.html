@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +21,11 @@
         /* border: 1px solid #554d4d; */
       }
       body {
-        height: 3000px;
+        height: 5000px;
+      }
+
+      #darkMode:checked ~ label div .toggle-main {
+        transform: translateX(1.3rem);
       }
     </style>
     <title>Belajar Tailwindcss</title>
@@ -133,26 +137,31 @@
       </div>
     </section>
 
-    <section class="mx-auto w-max my-10">
-      <button class="bg-transparent ...">Button A</button>
-      <button class="bg-cyan-500 ...">Button B</button>
-      <button class="bg-pink-500 ...">Button C</button>
-
-      <div class="w-30 h-20 bg-linear-30 from-blue-800 to-pink-500"></div>
+    <section class="my-8">
+      <img
+        class="w-lg h-lg mx-auto blur-xs"
+        src="https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        srcset=""
+      />
     </section>
 
     <section>
       <div
-        class="border-1 border-slate-300 shadow p-3 rounded w-lg block mx-auto font-inter"
+        class="border-1 border-slate-300 shadow p-3 rounded w-lg block mx-auto font-inter dark:border-slate-600 dark:bg-slate-700 dark:border-4"
       >
-        <p class="font-inter font-bold mx-auto my-5 w-max text-3xl">
+        <p
+          class="font-inter font-bold mx-auto my-5 w-max text-3xl dark:text-slate-100"
+        >
           Form Pendaftaran Lomba
           <span
             class="font-mono text-4xl block bg-gradient-to-r from-green-500 to-blue-600 to-90% bg-clip-text text-transparent"
             >Hackathon 2024</span
           >
         </p>
-        <div class="justify-center space-y-3 flex flex-wrap">
+        <div
+          class="justify-center space-y-3 flex flex-wrap dark:text-slate-100"
+        >
           <label for="Nama Universitas" class="">
             <span
               class="block mb-1 after:m-1 after:text-red-600 after:content-['*']"
@@ -227,7 +236,7 @@
             />
           </label>
           <button
-            class="mt-3 mb-3 ml-auto mr-[1rem] px-4 py-2 text-[1rem] rounded-lg bg-slate-800 text-white active:bg-slate-300 active:text-black"
+            class="mt-3 mb-3 ml-auto mr-[1rem] px-4 py-2 text-[1rem] rounded-lg bg-slate-800 text-white active:bg-slate-300 active:text-black dark:active:text-white dark:active:bg-slate-800 dark:bg-white dark:text-slate-900"
             type="submit"
           >
             Simpan
@@ -235,5 +244,132 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div
+        class="group flex my-8 mx-auto p-2 w-sm max-h-[13rem] border-1 rounded-lg border-slate-300 shadow font-inter overflow-hidden hover:bg-slate-600 transition duration-300"
+      >
+        <img
+          class="w-[8rem] h-[12rem] rounded-lg"
+          src="https://plus.unsplash.com/premium_photo-1663945778552-ca316a65c989?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+          alt=""
+          srcset=""
+        />
+        <div
+          class="content ml-2 group-hover:text-slate-200 transition duration-100"
+        >
+          <h1 class="text-2xl font-semibold">Lorem ipsum dolor sit amet.</h1>
+          <p class="text-sm my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            quos earum eligendi, inventore consectetur nisi distinctio
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col items-center justify-center mt-20">
+      <p>Dark Mode</p>
+      <div>
+        <input type="checkbox" name="darkMode" id="darkMode" class="hidden" />
+        <label for="darkMode" class="cursor-pointer">
+          <div
+            class="flex items-center w-12 h-7 border-2 rounded-full border-slate-400 bg-slate-100"
+          >
+            <div
+              class="toggle-main w-6 h-6 border-1 rounded-full border-slate-400 bg-slate-100"
+            ></div>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <!-- <section class="mt-32 space-y-8">
+      <div class="mx-auto w-12 h-12 rounded bg-green-400/45 group">
+        <div
+          class="mx-auto w-12 h-12 rounded bg-slate-500 transition group-hover:rotate-180 origin-top-left"
+        ></div>
+      </div>
+
+      <div class="mx-auto w-12 h-12 rounded bg-slate-500 animate-spin"></div>
+
+      <div
+        class="mx-auto w-12 h-12 rounded-full bg-slate-500 animate-bounce"
+      ></div>
+
+      <div
+        class="mx-auto w-12 h-12 rounded-full bg-slate-500 animate-pulse"
+      ></div>
+
+      <div
+        class="mx-auto w-12 h-12 rounded-full bg-slate-500 animate-ping"
+      ></div>
+    </section> -->
+
+    <section>
+      <div class="container mx-auto my-9">
+        <div class="border-1 rounded-lg shadow-lg p-5 overflow-auto">
+          <div>
+            <span></span>
+          </div>
+          <img
+            class="float-left mr-3"
+            src="https://plus.unsplash.com/premium_photo-1663945778552-ca316a65c989?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D"
+            alt="gambar"
+            width="100"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            placeat aspernatur nisi libero ducimus. Velit nulla error delectus
+            quo odio eaque provident, quis sunt commodi officiis ipsum ex
+            soluta. Esse ipsam repellendus odit in recusandae ut hic eos. Sit
+            officia sed commodi id iure natus unde autem beatae amet impedit
+            optio nam ea accusantium maiores eveniet, asperiores, illum
+            molestiae laborum eum quaerat obcaecati sint. Aperiam vel fuga
+            dolorem voluptates vitae ducimus? Ad maiores eius laborum aspernatur
+            reiciendis eos magnam nesciunt quae suscipit nam vero vitae,
+            possimus corrupti enim in iste. Voluptatum
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-24">
+      <div
+        class="container font-inter max-w-md mx-auto lg:flex lg:max-w-full lg:justify-center lg:w-full"
+      >
+        <div class="img mr-4 lg:flex-1 pl-4">
+          <h3 class="text-4xl font-bold text-slate-800">Ronald Pratama</h3>
+          <h2 class="mt-6 text-2xl font-semibold text-slate-800">
+            Mari Menggunakan Tailwind
+          </h2>
+          <p class="mt-2 text-slate-600">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consectetur mollitia fuga nulla neque dolorem assumenda ab facere
+            explicabo porro excepturi sint laudantium, veritatis eum corporis
+            dolores sed possimus aliquid iusto sunt, placeat illum magnam
+            officiis facilis reiciendis? Blanditiis earum obcaecati nihil neque.
+            Perferendis iusto tempore blanditiis dignissimos autem eum
+            accusantium quas sed cumque nobis veritatis consectetur iste placeat
+            quam ut, reiciendis itaque! Non saepe atque et officia doloribus
+            molestias nemo assumenda, quo facilis. Minus modi doloremque
+            molestiae porro qui harum!
+          </p>
+          <a
+            class="inline-block mt-4 px-3 py-1 bg-gradient-to-br text-white shadow-lg font-bold rounded-xl from-[#F77737] via-[#FD1D1D] to-[#E1306C]"
+            href="https://instagram.com/ronaldpratama._"
+            target="_blank"
+            >Follow my Instagram!</a
+          >
+        </div>
+
+        <img
+          class="mt-4 rounded-bl-full rounded-tl-full shadow-xl md:max-w-md xl:max-w-2xl"
+          src="../src/img/img-landscape.jpg"
+          alt="image"
+        />
+      </div>
+    </section>
+
+    <script src="../src/script/script.js"></script>
   </body>
 </html>

@@ -3,3 +3,7 @@
   --font-ubuntu: Ubuntu;
   --font-inter: Inter;
 }
+
+section {
+  @apply my-[10rem] py-5 border-t border-b border-slate-400 shadow-lg rounded-lg;
+}
