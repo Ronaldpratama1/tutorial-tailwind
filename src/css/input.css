@@ -2,8 +2,34 @@
 @theme {
   --font-ubuntu: Ubuntu;
   --font-inter: Inter;
+  --color-biru-facebook: #1877f2;
+  --color-oren-ubuntu: #e95420;
 }
 
 section {
   @apply my-[10rem] py-5 border-t border-b border-slate-400 shadow-lg rounded-lg;
+}
+
+/* Mengubah default nya tailwind menjadi yg kita inginkan */
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-green-400 px-4 py-2 rounded-xl text-white cursor-pointer hover:bg-green-600 active:outline-2 active:outline-green-500 active:outline-offset-2 active:bg-green-700;
+  }
+}
+
+/* Memberi custom css (Best practices ditaruh di utility) */
+@layer utilities {
+  body {
+    height: 1000rem;
+  }
+
+  #darkMode:checked ~ label div .toggle-main {
+    transform: translateX(1.3rem);
+  }
 }
